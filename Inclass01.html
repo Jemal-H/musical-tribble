@@ -41,13 +41,20 @@ text-shadow: none;
 }
 }
 /* Table Styling */
+.table-container {
+display:flex;
+justify-content: center;
+margin-top: 30px;
+}
 :root {
 --table-color: forestgreen;
 --row-bg-color: honeydew;
 }
 #game-table {
 /* border removed as requested */
+border:2px solid var(--table-color);
 text-align: center;
+height:200px;
 width: 400px;
 }
 table caption {
@@ -69,6 +76,7 @@ table caption {
 </head>
 <body>
 <h1>Yesterday - Best-Selling Video Games</h1>
+<div class= "table-container">
 <table id="game-table">
 <caption>Best-Selling Video Games</caption>
 <tr>
@@ -96,6 +104,7 @@ table caption {
 <td>82,870,000</td>
 <td>November 19, 2006</td>
 </tr>
+</div>
 </table>
 <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games"><p align="center">Source: https://en.wikipedia.org/wiki/List_of_best-selling_video_games</p></a>
 </body>
